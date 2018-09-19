@@ -1,0 +1,177 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.424), rgba(128, 128, 128, 0.424)), url('../img/background.jpg');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    color:Black; 
+    background: purple;
+}
+
+/* FONTS */
+h1 {
+    color: #4F4F4F;
+    font-size: 35px;
+}
+
+h2 {
+    color: #bfbfbf;   
+    font-size: 25px;
+}
+
+/* SEÇÃO SOBRE */
+.sobre {
+    background-color: white;
+    width: 650px;
+    margin: 0 auto;
+    height: 520px;
+}
+
+#perfil{
+    width: 150px;
+    height: 160px;
+    margin-top: 50px;
+    border-radius: 50%;
+}  
+
+.conteudo {
+    /* font-family: 'Lato', sans-serif; */
+    text-align: center;
+}
+
+.icones-redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 50px 80px;
+    
+}
+
+.icones-redes-sociais img {
+    width: 70px;
+    height: 70px;
+    filter: grayscale(100%)
+    
+}
+
+.icones-redes-sociais img:hover {
+    filter: grayscale(0%)
+}
+
+/* Responsivo */
+
+@media(max-width:920px) {
+    
+    h1 {
+        color: rgb(37, 37, 37);
+        font-size: 35px;
+    }
+    
+    h2 {
+        color: #464343;   
+        font-size: 25px;
+    }
+    .sobre{
+        background-color: rgb(163, 160, 160);
+    }
+}
+
+@media(max-width:740px) {
+    
+    body{
+        background: linear-gradient(to bottom, rgba(128, 128, 128, 0.424), rgba(128, 128, 128, 0.424)), url('../img/computador.jpg');
+        background-size: cover;
+    }
+    
+    h1 {
+        color: rgb(66, 64, 64);
+        font-size: 30px;
+    }
+    
+    h2 {
+        color: #cecaca;   
+        font-size: 20px;
+    }
+    .sobre{
+        background-color: rgb(179, 92, 190);
+        width: 500px;
+        height: 490px;
+        border-radius:10px;
+    }
+    
+    .icones-redes-sociais img {
+        width: 70px;
+        height: 70px;
+        filter: grayscale(100%)
+        
+    }
+    
+    .icones-redes-sociais img:hover {
+        filter: grayscale(0%)
+    }
+}
+@media(max-width:480px) {
+    
+    body{
+        background: linear-gradient(to bottom, rgba(179, 53, 172, 0.205), rgba(179, 53, 172, 0.205)), url('../img/laptop.jpg');
+        background-size:100vh;
+        margin-top: 50px;
+    }
+    
+    #perfil{
+        width: 150px;
+        height: 160px;
+        margin-top: 50px;
+        border-radius: 50%;
+    }  
+    
+    
+    h1 {
+        color: rgb(66, 64, 64);
+        font-size: 30px;
+    }
+    
+    h2 {
+        color: #e7e4e4;   
+        font-size: 23px;
+    }
+    .sobre{
+        background-color: rgb(178, 171, 194);
+        width: 300px;
+        height: 500px;
+        border-radius:10px;
+    }
+    
+    .icones-redes-sociais img {
+        width: 60px;
+        height: 60px;
+        filter: grayscale(100%)
+        
+    }
+    
+    .icones-redes-sociais img:hover {
+        filter: grayscale(0%)
+    }
+
+    .icones-redes-sociais {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 30px 80px;
+        
+    }
+}
+
+
